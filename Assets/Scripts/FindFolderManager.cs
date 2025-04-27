@@ -121,8 +121,9 @@ public class FindFolderManager : MonoBehaviour
         var files = new DirectoryInfo(downloadPath).GetFiles();
         foreach (var file in files)
         {
-            if (file.Extension.Equals(".mp3", StringComparison.OrdinalIgnoreCase) &&
-                !file.Name.EndsWith(".trashed", StringComparison.OrdinalIgnoreCase))
+            if (file.Extension.Equals(".mp3", StringComparison.OrdinalIgnoreCase)
+                && !file.Name.StartsWith(".trashed", StringComparison.OrdinalIgnoreCase)
+                && !file.Name.EndsWith(".trashed", StringComparison.OrdinalIgnoreCase))
             {
                 FilesName.Add(file.Name);
                 FilesPath.Add(file.FullName);
