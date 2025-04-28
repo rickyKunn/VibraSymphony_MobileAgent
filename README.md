@@ -40,7 +40,7 @@ Androidデバイスを通じて、音楽データの送信およびCore側から
 
 1. Android 実機上で **VibraSymphony_MobileAgent(以下、「MobileAgent」と略記)** を起動します（Unityフォルダを実機にビルド・インストール)
 
-2. Unity エディタ(または実行ファイル)で **VibraSymphony_Core(以下、「Core」と略記)** を開き、StartSceneを再生(実行ファイルの場合、自動で再生される)
+2. Unity エディタ(またはOculus Quest)で **VibraSymphony_Core(以下、「Core」と略記)** を開き、StartSceneを再生(Oculusの場合、アプリを起動)
 
 3. **MobileAgent** を起動し、`Main` ボタンを選択
 
